@@ -88,6 +88,37 @@
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+    position: relative;
+}
+
+.slide .comment {
+    position: absolute;
+    bottom: 10px;
+}
+
+.slide .comment a {
+    background-color: #fff;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    color: #2c3e50;
+    transition: .5s;
+}
+
+.liked {
+    color: #EA2027;
+}
+
+.slide .comment a:hover  {
+    color: #fff;
+}
+
+.slide .comment a:first-child:hover {
+    background-color:#EA2027;
+}
+
+.slide .comment a:last-child:hover {
+    background-color:#2980b9;
 }
 
 .slide img {

@@ -7,8 +7,8 @@ $(document).ready(function () {
                 slidesToScroll: 1,
                 prevArrow:'<i class="fas fa-chevron-left slick-prev"></i>',
                 nextArrow:'<i class="fas fa-chevron-right slick-next"></i>',
-                autoplay: true,
-                autoplaySpeed: 5000,
+                // autoplay: true,
+                // autoplaySpeed: 5000,
             });
 
             $('.slider2').slick({
@@ -19,7 +19,7 @@ $(document).ready(function () {
                 autoplay: true,
                 autoplaySpeed: 5000,
             });
-            
+
         } else {
             $('.slider').slick({
                 slidesToShow: 1,
@@ -39,6 +39,10 @@ $(document).ready(function () {
                 autoplaySpeed: 5000,
             });
         }
+    });
+
+    $(document).on('click', '.like', function () {
+        $(this).children().toggleClass('liked');
     });
 
     // $(window).resize( function () {
