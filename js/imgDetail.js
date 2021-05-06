@@ -13,9 +13,12 @@ $(document).ready(function () {
 
     $(document).on('click', '.btn-send', function (e) {
         var yourCmt = $('#your-cmt').val();
+        
         if ($.trim($('#your-cmt').val()) != '') {
+            var number = $('.cmt').children('span').text();
             var html = "<div class='comments'><div class='auth'>Your comments</div><div>"+ yourCmt +"</div></div>";
             $('.content-comment').append(html);
+            $('.cmt').children('span').text(number * 1 + 1);
         }
     });
 });

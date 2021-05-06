@@ -40,7 +40,7 @@
     bottom: 10px;
 }
 
-.slide .comment a {
+.slide .comment > a {
     background-color: #fff;
     padding: 10px 12px;
     border: 1px solid transparent;
@@ -53,15 +53,15 @@
     color: #EA2027;
 }
 
-.slide .comment a:hover  {
+.slide .comment > a:hover  {
     color: #fff;
 }
 
-.slide .comment a:first-child:hover {
+.slide .comment > a:first-child:hover {
     background-color:#EA2027;
 }
 
-.slide .comment a:last-child:hover {
+.slide .comment > a:last-child:hover {
     background-color:#2980b9;
 }
 
@@ -241,8 +241,12 @@
 /* end section5 */
 
 .slide:hover, .slide2:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: translateY(-10px);
+}
+
+.slide2:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1204px) {

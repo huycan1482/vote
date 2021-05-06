@@ -7,8 +7,8 @@ $(document).ready(function () {
                 slidesToScroll: 1,
                 prevArrow:'<i class="fas fa-chevron-left slick-prev"></i>',
                 nextArrow:'<i class="fas fa-chevron-right slick-next"></i>',
-                autoplay: true,
-                autoplaySpeed: 2000,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
             });
 
             $('.slider2').slick({
