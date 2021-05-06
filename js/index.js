@@ -7,8 +7,8 @@ $(document).ready(function () {
                 slidesToScroll: 1,
                 prevArrow:'<i class="fas fa-chevron-left slick-prev"></i>',
                 nextArrow:'<i class="fas fa-chevron-right slick-next"></i>',
-                // autoplay: true,
-                // autoplaySpeed: 5000,
+                autoplay: true,
+                autoplaySpeed: 2000,
             });
 
             $('.slider2').slick({
@@ -17,7 +17,7 @@ $(document).ready(function () {
                 prevArrow:'<i class="fas fa-chevron-left slick-prev"></i>',
                 nextArrow:'<i class="fas fa-chevron-right slick-next"></i>',
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 2000,
             });
 
         } else {
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 prevArrow:"<i class='fas fa-chevron-left slick-prev'></i>",
                 nextArrow:"<i class='fas fa-chevron-right slick-next'></i>",
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 2000,
             });
 
             $('.slider2').slick({
@@ -36,7 +36,7 @@ $(document).ready(function () {
                 prevArrow:"<i class='fas fa-chevron-left slick-prev'></i>",
                 nextArrow:"<i class='fas fa-chevron-right slick-next'></i>",
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 2000,
             });
         }
     });
@@ -45,26 +45,4 @@ $(document).ready(function () {
         $(this).children().toggleClass('liked');
     });
 
-    // $(window).resize( function () {
-    //     console.log('?')
-    //     if ($(this).width() > 780) {
-    //         $('.slider').slick({
-    //             slidesToShow: 3,
-    //             slidesToScroll: 1,
-    //             // prevArrow:'<i class="fas fa-chevron-left slick-prev"></i>',
-    //             // nextArrow:'<i class="fas fa-chevron-right slick-next"></i>',
-    //             autoplay: true,
-    //             autoplaySpeed: 1000,
-    //         });
-    //     } else {
-    //         $('.slider').slick({
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             // prevArrow:"<i class='fas fa-chevron-left slick-prev'></i>",
-    //             // nextArrow:"<i class='fas fa-chevron-right slick-next'></i>",
-    //             autoplay: true,
-    //             autoplaySpeed: 1000,
-    //         });
-    //     }
-    // });
 });
